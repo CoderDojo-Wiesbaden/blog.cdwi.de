@@ -1,0 +1,17 @@
+/*
+* Sidebar
+*/
+
+.sidebar {
+    background-color: #f0f0f0;
+}
+
+.sidebar-about h1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar a,
+.sidebar p {
+    color: #404040;
+}
