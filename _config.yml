@@ -13,20 +13,31 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
 title: CDwi\blog
 email: blog@coderdojo-wiesbaden.de
-description: >- # this means to ignore newlines until "baseurl:"
-  Der Blog des CoderDojos Wiesbadens.<br/>
-  Lies ihn. Lass dich inspirieren. Sei beeindruckt. Vielleicht.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://blog.coderdojo-wiesbaden.de" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: CoderDojo-Wiesbaden
+
+description:
+  main: Der Blog des CoderDojos Wiesbadens.<br/>
+  sub: Lies ihn. Lass dich inspirieren. Sei beeindruckt. Vielleicht.
+
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: https://blog.coderdojo-wiesbaden.de # the base hostname & protocol for your site, e.g. http://example.com
+
+github:
+  org: CoderDojo-Wiesbaden
 
 # Build settings
 markdown: kramdown
+#markdown:         redcarpet
+#highlighter:      pygments
+
+paginate: 5
+permalink:        pretty
 theme: jekyll-theme-hyde
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
