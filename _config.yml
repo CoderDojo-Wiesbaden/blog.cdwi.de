@@ -35,7 +35,7 @@ markdown: kramdown
 paginate: 5
 permalink:        pretty
 #theme: jekyll-theme-hyde
-remote_theme: fongandrew/hydeout
+#remote_theme: poole/hyde
 plugins:
   - jekyll-feed
   - jekyll-paginate
