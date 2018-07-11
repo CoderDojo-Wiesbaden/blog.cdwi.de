@@ -3,6 +3,7 @@ layout: post
 title: Programmierkurse bei Seibert Media in Wiesbaden
 permalink: /seibert
 tags: [Seibert, Kurs, Angebot]
+author: Benjamin
 ---
 
 Nicht nur die katholische Pfarrei St. Bonifatius engagiert sich mit dem CoderDojo, um das Thema Kindern programmieren beizubringen, sondern auch die Firma Seibert Media. Wir begrüßen es, dass Martin Seibert sich als Unternehmer für dieses Anliegen engagiert. Beim letzten CoderDojo hatten wir auch bereits Unterstützung durch Seibert Media-Mitarbeiter. 

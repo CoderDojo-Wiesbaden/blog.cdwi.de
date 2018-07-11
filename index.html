@@ -13,7 +13,13 @@ permalink:
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-details">
+      {% if post.author != null %}
+        {{ post.author }}, {{ post.date | date: "%d.%m.%Y" }}
+      {% else %}
+        {{ post.date | date: "%d.%m.%Y" }}
+      {% endif %}
+    </span>
 
     {{ post.content }}
   </div>

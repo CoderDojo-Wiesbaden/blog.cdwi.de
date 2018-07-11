@@ -3,6 +3,7 @@ layout: post
 title: Was bisher geschah...
 permalink: /bisher
 tags: [Ausbau, Raum, Änderung, Interview, Medien, Spezial]
+author: Florian
 ---
 
 Nach einer Frühling-bis-Winter-Pause ist dieser Blog nun zurück. Hier ist Alles, was du vielleicht verpasst hast:
@@ -18,6 +19,7 @@ Mit einer Anmeldung beim CoderDojo meldest du dich auch für wichtige Informatio
 Im September kam der Radiosender FFH zu uns, um einige von uns zu interviewen. Hier gelangst du [zur Seite von FFH](https://www.ffh.de/on-air/sendungen/kreuz-quer/toController/Topic/toAction/show/toId/136009/toTopic/kreuz-quer-programmieren-im-coderdojo.html) oder [zur Datei](https://drive.google.com/open?id=1dil_4jcJfmP3xyBRud5WQr0yroWySlUy).
 
 ### Weitere Räume
+
 Dank unserem  St. Bonifatius stehen uns nun auch noch der Maximilian-Kolbe- und ein weiterer Raum, der Technikraum zur Verfügung.
 
 ### Neujahres-Spezial-Dojo

@@ -3,6 +3,7 @@ layout: post
 title: Tischkicker goes Arduino
 permalink: /tischkicker
 tags: [Arduino, Tischkicker, Code]
+author: Benjamin
 ---
 
 Wir haben angefangen, unseren alten Tischkicker zu automatisieren. Das erste Teilprogramm zum Erfassen der Tore, sowie der Versuchsaufbau einer Lichtschranke im Torbereich, haben wir heute erfolgreich fertiggestellt. Realisiert haben wir das mit einem Arduino. 
