@@ -29,13 +29,9 @@ github:
 
 # Build settings
 markdown: kramdown
-#markdown:         redcarpet
-#highlighter:      pygments
-
 paginate: 5
 permalink:        pretty
-#theme: jekyll-theme-hyde
-#remote_theme: poole/hyde
+theme: jekyll-theme-hyde
 plugins:
   - jekyll-feed
   - jekyll-paginate
