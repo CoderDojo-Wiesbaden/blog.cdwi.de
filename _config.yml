@@ -19,10 +19,11 @@ email: blog@coderdojo-wiesbaden.de
 
 description:
   main: Der Blog des CoderDojos Wiesbadens.<br/>
-  sub: Lies ihn. Lass dich inspirieren. Sei beeindruckt. Vielleicht.
+  sub: Lies ihn.<br/>Lass dich inspirieren.<br/>Sei beeindruckt. Vielleicht.
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://blog.coderdojo-wiesbaden.de # the base hostname & protocol for your site, e.g. http://example.com
+mainurl: https://coderdojo-wiesbaden.de
 
 github:
   org: CoderDojo-Wiesbaden

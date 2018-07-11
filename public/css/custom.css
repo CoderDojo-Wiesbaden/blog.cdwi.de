@@ -8,7 +8,8 @@
 
 .sidebar-about h1 {
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
 }
 
 .sidebar a,
@@ -33,4 +34,8 @@ div.homesite.post {
     padding-bottom: 4em;
     margin-bottom: 5em;
     border-bottom: 1px solid #808080;
+}
+
+h1, h2, h3 {
+    font-family: "Overpass", Arial, Helvetica, sans-serif;
 }
