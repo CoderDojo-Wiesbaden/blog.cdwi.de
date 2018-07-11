@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Was bisher geschah...
-short: /bisher
+permalink: /bisher
+tags: [Ausbau, Raum, Änderung, Interview, Medien, Spezial]
 ---
 
 Nach einer Frühling-bis-Winter-Pause ist dieser Blog nun zurück. Hier ist Alles, was du vielleicht verpasst hast:

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Wir werden Maker
-short: /makerwerden
+permalink: /makerwerden
+tags: [Maker, 3D-Drucker, CAD]
 ---
 
 > Maker [mæ͜ɪkə] (engl. für ‚Schöpfer‘ oder ‚Hersteller‘) ist die Bezeichnung für eine Subkultur, die man auch als Do-It-Yourself-Kultur mit dem Einsatz aktueller Technik beschreiben kann.
