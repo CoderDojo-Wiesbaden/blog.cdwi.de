@@ -4,5 +4,6 @@ node_js:
 before_install:
 - npm install -g firebase-tools
 script:
+- gem install jekyll
 - bundle exec jekyll build
 - firebase deploy --token "$FB_TOKEN"
