@@ -59,23 +59,18 @@ description: >-
   <!-- This state should never be reached but is here just in case -->
   <a class="pagination-item newer fullwidth" href="{{ site.baseurl }}">&larr; Zurück zum Start</a>
   {% endif %}
-
-
-  <!--
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">&larr; Neuer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">&larr; Neuer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">&larr; Neuer</span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Älter &rarr;</a>
-  {% else %}
-    <span class="pagination-item older">Älter &rarr;</span>
-  {% endif %}
-
--->
 </div>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    });
+  }
+</script>
