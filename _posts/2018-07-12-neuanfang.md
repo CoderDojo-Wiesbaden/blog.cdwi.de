@@ -10,6 +10,8 @@ Als wir Anfang des Jahres von Squarespace als CMS und Hoster zu Firebase als Hos
 
 **Die Zeit ohne Blog ist jetzt aber vorbei 😀**
 
+<!--break-->
+
 Diese wunderschöne, auf [Jekyll](https://jekyllrb.com) basierende Website nimmt ab sofort parallel [zu unserer komplett statischen Seite](https://coderdojo-wiesbaden.de) ihre Arbeit als Blog auf.
 
 Ein großer Vorteil von Jekyll ist, die schnelle Reaktionszeit durch statische Seiten, die dann bei der Erstellung eines Beitrages oder der Änderung der Konfiguration neu erstellt werden.
@@ -31,5 +33,9 @@ author: #Wenn du möchtest, kannst du dich hier als Autor hinzufügen.
 ---
 ```
 Danach kannst du deinen Beitrag schreiben und Markdown nutzen. [Hier ist eine Auflistung vieler Markdown-Funktionen](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+Damit die Startseite nicht durch lange Beiträge unübersichtlich wird, kannst du angeben, an welcher Stelle dein Beitrag unterbrochen werden soll.
+Füge `<!--break-->` ein, um einen Weiterlesen-Link hinzuzufügen.
+Falls du diese Unterbrechung mitten in einem Paragraphen setzt, verwende bitte `<!--break--><!--n-->`.
 
 Tipp: Wenn du im Dateinamen ein Datum in der Zukunft wählst, wird dein Beitrag erst an diesem Datum veröffentlicht.

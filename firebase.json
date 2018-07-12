@@ -5,6 +5,44 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=2628000"
+          }
+        ]
+      },
+      {
+        "source": "hyde.css|poole.css",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
+      },
+      {
+        "source": "custom.css",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=68400"
+          }
+        ]
+      }
     ]
   }
 }

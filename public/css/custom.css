@@ -28,7 +28,7 @@
 div.homesite.post {
     padding-bottom: 4em;
     margin-bottom: 5em;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid #aaaaaa;
 }
 
 /*
@@ -37,8 +37,14 @@ div.homesite.post {
 
 h1,
 h2,
-h3 {
+h3,
+.post-title {
     font-family: "Overpass", Arial, Helvetica, sans-serif;
+    color: #3a3a3a;
+}
+
+strong {
+    color: #3a3a3a;
 }
 
 .sub,
@@ -54,6 +60,19 @@ h3 {
     margin-top: -.5rem;
     margin-bottom: 1rem;
     color: #9a9a9a;
+}
+
+/*
+* Home page
+*/
+
+a.pagination-item:first-child {
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+}
+a.pagination-item:last-child {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
 }
 
 /* Desktop only */

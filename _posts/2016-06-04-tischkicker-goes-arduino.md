@@ -6,7 +6,9 @@ tags: [Arduino, Tischkicker, Code]
 author: Benjamin
 ---
 
-Wir haben angefangen, unseren alten Tischkicker zu automatisieren. Das erste Teilprogramm zum Erfassen der Tore, sowie der Versuchsaufbau einer Lichtschranke im Torbereich, haben wir heute erfolgreich fertiggestellt. Realisiert haben wir das mit einem Arduino. 
+Wir haben angefangen, unseren alten Tischkicker zu automatisieren. Das erste Teilprogramm zum Erfassen der Tore, sowie der Versuchsaufbau einer Lichtschranke im Torbereich, haben wir heute erfolgreich fertiggestellt. Realisiert haben wir das mit einem Arduino.
+
+<!--break-->
 
 [Der Code hierfür ist hier zu finden](https://ghostbin.com/paste/o33a8)
 

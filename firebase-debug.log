@@ -1,0 +1,41 @@
+[debug] [2018-07-11T21:14:06.173Z] ----------------------------------------------------------------------
+[debug] [2018-07-11T21:14:06.174Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\koeni\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-07-11T21:14:06.174Z] CLI Version:   3.18.5
+[debug] [2018-07-11T21:14:06.174Z] Platform:      win32
+[debug] [2018-07-11T21:14:06.174Z] Node Version:  v8.11.1
+[debug] [2018-07-11T21:14:06.175Z] Time:          Wed Jul 11 2018 23:14:06 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-11T21:14:06.175Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-11T21:14:06.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-11T21:14:06.185Z] > authorizing via signed-in user
+[debug] [2018-07-11T21:14:06.186Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-07-11T21:14:06.186Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/GsKlBUiM6-uhFIbRJ6O1GajhheRBOnVdLOJfibUN5QQ',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Jul 11 2018 23:14:06 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-11T21:14:06.374Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-11T21:14:06.378Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/cdwi-blog  
+  
+ Wed Jul 11 2018 23:14:06 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-11T21:14:07.138Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-11T21:14:07.140Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/cdwi-blog/tokens  
+  
+ Wed Jul 11 2018 23:14:07 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-11T21:14:07.763Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-11T21:14:07.766Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cdwi-blog  
+  
+ Wed Jul 11 2018 23:14:07 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-11T21:14:08.661Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\koeni\Code\Web\blog.coderdojo-wiesbaden.de'...
+[info] 
+[debug] [2018-07-11T21:14:08.663Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/520713050035/clients/_:getWebAppConfig  
+  
+ Wed Jul 11 2018 23:14:08 GMT+0200 (Mitteleuropäische Sommerzeit)
+[debug] [2018-07-11T21:14:09.199Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: _site
+[info] +  hosting: Local server: http://localhost:5000
+

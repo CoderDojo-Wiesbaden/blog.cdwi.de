@@ -12,6 +12,8 @@ Nach einer Frühling-bis-Winter-Pause ist dieser Blog nun zurück. Hier ist Alle
 
 Die [Anmeldung](https://coderdojo-wiesbaden.de/anmeldung) läuft nun über [die Seite des CoderDojos](https://zen.coderdojo.com/), statt wie bisher über Eventbrite.
 
+<!--break-->
+
 Mit einer Anmeldung beim CoderDojo meldest du dich auch für wichtige Informationen und Einladungen zu den nächsten Dojos an.
 
 ### CoderDojo Wiesbaden im Rundfunk
