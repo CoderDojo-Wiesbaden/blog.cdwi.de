@@ -28,20 +28,29 @@
         ]
       },
       {
-        "source": "hyde.css|poole.css",
+        "source": "/public/css/hyde.css",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=604800"
+            "value": "max-age=1209000"
           }
         ]
       },
       {
-        "source": "custom.css",
+        "source": "/public/css/hyde.css",
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "max-age=68400"
+            "value": "max-age=1209000"
+          }
+        ]
+      },
+      {
+        "source": "/public/css/custom.css",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=86400"
           }
         ]
       }
