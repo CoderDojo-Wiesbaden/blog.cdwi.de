@@ -2,9 +2,9 @@
 
 var CACHE_ASSETS = "assets-cache-v1";
 var urlsToCache = [
-  "/public/css/hyde.css",
+  /*"/public/css/hyde.css",
   "/public/css/poole.css",
-  "/public/css/custom.css"
+  "/public/css/custom.css"*/
 ];
 
 self.addEventListener('install', function (event) {
@@ -17,6 +17,7 @@ self.addEventListener('install', function (event) {
   );
 });
 
+/*
 self.addEventListener('fetch', function (event) {
   event.respondWith(
     caches.match(event.request)
@@ -50,3 +51,4 @@ self.addEventListener('fetch', function (event) {
       })
   );
 });
+*/

@@ -69,17 +69,24 @@ strong {
 a.pagination-item {
     border: 1px solid #aaaaaa;
 }
+
 a.pagination-item:first-child {
     border-top-left-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     margin-left: 0em;
 }
+
 a.pagination-item:last-child {
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
 }
+
 a.pagination-item.fullwidth {
     width: 100%;
+}
+
+ul.footer {
+    display: none;
 }
 
 /* Desktop only */
@@ -125,6 +132,7 @@ a.pagination-item.fullwidth {
         list-style-type: none;
         text-align: center;
         overflow: hidden;
+        display: block;
     }
     ul.footer li {
         display: inline;
