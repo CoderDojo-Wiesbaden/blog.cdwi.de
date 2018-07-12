@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wir haben einen neuen Blog
-permalink: neuanfang
+permalink: /neuanfang
 tags: [Neu, Änderung, Blog, Web, Projekt, Design]
 author: Florian
 ---
