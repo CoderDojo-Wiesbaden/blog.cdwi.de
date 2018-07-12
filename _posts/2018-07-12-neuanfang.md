@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wir haben einen neuen Blog
-permalink: /neuanfang
+permalink: neuanfang
 tags: [Neu, Änderung, Blog, Web, Projekt, Design]
 author: Florian
 ---
@@ -27,7 +27,7 @@ Ganz oben muss die Datei die folgenden Zeilen aufweisen:
 ---
 layout: post
 title: #Der angezeigte Name (z.B. Ein Beitrag)
-permalink: #Ein möglichst kurzer, lesbarer link (z.B. /neuanfang) - Bitte achte auf den Schrägstrich "/"
+permalink: #Ein möglichst kurzer, lesbarer link (z.B. /neuanfang)
 tags: #Die Tags, die mit Beitrag zusammenhängen (z.B. Beitrag Hilfe Anleitung)
 author: #Wenn du möchtest, kannst du dich hier als Autor hinzufügen.
 ---

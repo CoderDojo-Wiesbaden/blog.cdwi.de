@@ -2,7 +2,11 @@
   <div class="container sidebar-sticky">
 
     <div class="sidebar-about">
-      <a href="https://cdwi.de/b{{ page.permalink }}" class="shortlink sub">cdwi.de/b{{ page.permalink }}</a>
+      {% if page.permalink == nil %}
+        <a href="https://cdwi.de/b" class="shortlink sub">{{ site.shorturl }}</a>
+      {% else %}
+        <a href="https://cdwi.de/b/{{ page.permalink | remove: '/'}}" class="shortlink sub">{{ site.shorturl }}/{{ page.permalink | remove: "/"}}</a>
+      {% endif %}
       <h1 class="title">
         <a href="{{ site.baseurl }}">
           {{ site.title }}

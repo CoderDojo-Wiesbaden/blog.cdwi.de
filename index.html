@@ -1,7 +1,9 @@
 ---
 layout: default
-title: Start
-permalink: 
+permalink:
+description: >-
+  Der Blog des Wiesbadener CoderDojos.
+  Lies ihn. Lerne etwas. Lass dich inspirieren. 
 ---
 
 <div class="posts">
@@ -35,7 +37,32 @@ permalink:
 </div>
 
 <div class="pagination">
-    {% if paginator.previous_page %}
+  {% if paginator.next_page == falsy and paginator.previous_page == falsy %}
+    <p>Das sind alle Beiträge.</p>
+  {% elsif paginator.next_page != falsy and paginator.previous_page == falsy %}
+    <a class="pagination-item older fullwidth" href="{{ site.baseurl }}page{{paginator.next_page}}">Ältere Beiträge anzeigen &rarr;</a>
+  {% elsif paginator.next_page != falsy and paginator.previous_page != falsy %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">&larr; Neuer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">&larr; Neuer</a>
+    {% endif %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Älter &rarr;</a>
+  {% elsif paginator.next_page == falsy and paginator.previous_page != falsy %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">&larr; Neuer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">&larr; Neuer</a>
+    {% endif %}
+    <span class="pagination-item older">Älter &rarr;</span>
+  {% else %}
+  <!-- This state should never be reached but is here just in case -->
+  <a class="pagination-item newer fullwidth" href="{{ site.baseurl }}">&larr; Zurück zum Start</a>
+  {% endif %}
+
+
+  <!--
+  {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}">&larr; Neuer</a>
     {% else %}
@@ -49,4 +76,6 @@ permalink:
   {% else %}
     <span class="pagination-item older">Älter &rarr;</span>
   {% endif %}
+
+-->
 </div>

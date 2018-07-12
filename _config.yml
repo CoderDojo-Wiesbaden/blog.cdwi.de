@@ -15,15 +15,20 @@
 # in the templates via {{ site.myvariable }}.
 
 title: CDwi\blog
+browsertitle: Blog | CoderDojo Wiesbaden
 email: blog@coderdojo-wiesbaden.de
 
 description:
   main: Der Blog des CoderDojos Wiesbadens.<br/>
   sub: Lies ihn.<br/>Lass dich inspirieren.<br/>Sei beeindruckt. Vielleicht.
+searchdescription: >-
+  Der Blog des Wiesbadener CoderDojos.
+  Lerne mit anderen Jugendlichen in entspannter Atmosphäre, zu Programmieren.
 
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://blog.coderdojo-wiesbaden.de # the base hostname & protocol for your site, e.g. http://example.com
 mainurl: https://coderdojo-wiesbaden.de
+shorturl: cdwi.de/b
 
 github:
   org: CoderDojo-Wiesbaden
@@ -31,7 +36,6 @@ github:
 # Build settings
 markdown: kramdown
 paginate: 25
-permalink: pretty
 theme: jekyll-theme-hyde
 plugins:
   - jekyll-feed
