@@ -82,6 +82,7 @@ div.outercontainer {
 
 div.content.container {
     background-color: #ffffff;
+    padding-top: 1.5em;
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
     box-shadow: 0 0 15px #cccccc;
@@ -108,6 +109,18 @@ a.pagination-item.fullwidth {
 
 ul.footer {
     display: none;
+}
+
+.pulltab {
+    height: 0.3em;
+    width: 2.5em;
+    background-color: #9a9a9a;
+    border-radius: 1em;
+    /* Using the padding from .content.container */
+    margin-top: 0;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Desktop only */
@@ -142,6 +155,9 @@ ul.footer {
     div.posts,
     div.pagination {
         max-width: 38em;
+    }
+    .pulltab {
+        display: none;
     }
     /*
     * Footer

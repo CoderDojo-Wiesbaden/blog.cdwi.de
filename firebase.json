@@ -37,7 +37,7 @@
         ]
       },
       {
-        "source": "/public/css/hyde.css",
+        "source": "/public/css/poole.css",
         "headers": [
           {
             "key": "Cache-Control",
