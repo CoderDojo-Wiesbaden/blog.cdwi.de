@@ -28,16 +28,7 @@
         ]
       },
       {
-        "source": "/public/css/hyde.css",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=1209000"
-          }
-        ]
-      },
-      {
-        "source": "/public/css/poole.css",
+        "source": "/public/css/theme.css",
         "headers": [
           {
             "key": "Cache-Control",

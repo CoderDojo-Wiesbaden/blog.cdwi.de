@@ -114,7 +114,7 @@ ul.footer {
 .pulltab {
     height: 0.3em;
     width: 2.5em;
-    background-color: #9a9a9a;
+    background-color: #cccccc;
     border-radius: 1em;
     /* Using the padding from .content.container */
     margin-top: 0;
