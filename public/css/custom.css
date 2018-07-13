@@ -74,15 +74,25 @@ div.sidebar {
     height: 100%;
 }
 
+.post div.sidebar .lead,
+.post div.sidebar .sidebar-nav {
+    display: none;
+}
+
 div.outercontainer {
     background-color: #f0f0f0;
     margin-top: 24em;
     min-height: 100vh;
 }
 
+.post div.outercontainer {
+    margin-top: 10em;
+    transition: 800ms;
+}
+
 div.content.container {
     background-color: #ffffff;
-    padding-top: 1.5em;
+    padding-top: 0.975em;
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
     box-shadow: 0 0 15px #cccccc;
@@ -115,12 +125,26 @@ ul.footer {
     height: 0.3em;
     width: 2.5em;
     background-color: #cccccc;
-    border-radius: 1em;
+    border-radius: 10em;
     /* Using the padding from .content.container */
-    margin-top: 0;
-    margin-bottom: 1em;
+    margin-top: 0.225em;
+    margin-bottom: 0.55em;
     margin-left: auto;
     margin-right: auto;
+    transition: 300ms;
+}
+
+.pulltab:hover:not(:visited) {
+    background-color: #9a9a9a;
+    margin-top: 0;
+    margin-bottom: 0.325em;
+    height: 0.75em;
+    width: 0.8em;
+    transition: 300ms;
+}
+
+.pulltab.invisible {
+    background-color: transparent;
 }
 
 /* Desktop only */
@@ -131,9 +155,15 @@ ul.footer {
     */
     div.sidebar {
         z-index: 0;
+        padding-top: 0;
         width: 18em;
     }
-    div.outercontainer {
+    .post div.sidebar .lead,
+    .post div.sidebar .sidebar-nav {
+        display: block;
+    }
+    div.outercontainer,
+    .post div.outercontainer {
         margin-top: 0;
         padding-bottom: 2em;
         padding-top: 1em;
