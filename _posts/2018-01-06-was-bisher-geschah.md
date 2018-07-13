@@ -2,7 +2,7 @@
 layout: post
 title: Was bisher geschah...
 permalink: /bisher
-tags: [Ausbau, Raum, Änderung, Interview, Medien, Spezial]
+tags: [Ausbau, Raum, Aenderung, Interview, Medien, Spezial]
 author: Florian
 ---
 

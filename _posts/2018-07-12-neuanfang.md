@@ -2,7 +2,7 @@
 layout: post
 title: Wir haben einen neuen Blog
 permalink: /neuanfang
-tags: [Neu, Änderung, Blog, Web, Projekt, Design]
+tags: [Neu, Aenderung, Blog, Web, Projekt, Design, Code]
 author: Florian
 ---
 

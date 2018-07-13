@@ -1,4 +1,19 @@
 document.getElementById("pulltab").classList.remove("invisible");
+if (document.body.classList.contains("post"))
+document.getElementById("expand-icon").classList.remove("invisible");
+
+function fixHoverState() {
+    var el = this
+    var par = el.parentNode
+    var next = el.nextSibling
+    par.removeChild(el)
+    setTimeout(function() {par.insertBefore(el, next);}, 0)
+}
+
+function toggleExpandedContent() {
+	document.body.classList.toggle("expanded")
+}
+
 
 $(document).ready(function () {
 
@@ -25,11 +40,3 @@ $(document).ready(function () {
 		} // End if
 	});
 });
-
-function fixHoverState() {
-    var el = this;
-    var par = el.parentNode;
-    var next = el.nextSibling;
-    par.removeChild(el);
-    setTimeout(function() {par.insertBefore(el, next);}, 0)
-}
