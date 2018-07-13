@@ -14,6 +14,12 @@ layout: default
   {{ content }}
 </div>
 
+<div class="taglist">
+  {% for tag in page.tags %}
+    <small><a href="{{ site.baseurl }}tag/{{ tag }}" class="tag">{{ tag }}</a></small>
+  {% endfor %}
+</div>
+
 <div class="related">
   <h2>Weitere Beiträge</h2>
   <ul class="related-posts">
@@ -22,14 +28,14 @@ layout: default
         <h3>
           <a href="{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date: "%d.%m.%Y" }}</small>
-
-            {% comment %}
-              The date needs to be translated to german.
-              Read this: http://alanwsmith.com/jekyll-liquid-date-formatting-examples
-            {% endcomment %}
-
           </a>
+          <small>{{ post.date | date: "%d.%m.%Y" }}</small>
+
+          {% comment %}
+            The date needs to be translated to german.
+            Read this: http://alanwsmith.com/jekyll-liquid-date-formatting-examples
+          {% endcomment %}
+
         </h3>
       </li>
     {% endfor %}

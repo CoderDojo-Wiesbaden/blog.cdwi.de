@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="tags-container">
+  <h2>Tag: {{ page.tag }}</h2>
+  <ul class="related-posts">
+    {% for post in page.posts %}
+    <li>
+      <h3>
+        <a href="{{ post.url }}">
+          {{ post.title }}</a>
+        <small>{{ post.date | date: "%d.%m.%Y" }}</small>
+        <small>
+          <small>{{ post | tags }}</small>
+        </small>
+      </h3>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <div id="tag-cloud">
+    {{ site | tag_cloud }}
+  </div>
+</div>

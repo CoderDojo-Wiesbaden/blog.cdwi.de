@@ -41,6 +41,17 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+
+tag_page_layout: tags
+tag_page_dir: tag
+
+tag-descriptions:
+    3d-drucker: >-
+      Seitdem unser 3D-Drucker nach knapp 10 Monaten Lieferzeit ankam, sorgt er regelmäßig für Probleme.
+      Doch wenn er einmal funktioniert, ist er wirklich praktisch und half uns schon bei diversen Projekten.
+    cad: >-
+      Beschreibung.
+
 defaults:
   -
     scope:
