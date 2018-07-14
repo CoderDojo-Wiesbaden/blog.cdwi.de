@@ -134,6 +134,7 @@ div.outercontainer {
     background-color: #f0f0f0;
     margin-top: 24em;
     min-height: 100vh;
+    transition: 800ms;
 }
 
 .post div.outercontainer {
@@ -148,10 +149,6 @@ div.content.container {
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
     box-shadow: 0 0 15px #cccccc;
-}
-
-div.innercontainer {
-    background-color: #ffffff;
 }
 
 a.pagination-item {
@@ -197,6 +194,67 @@ ul.footer {
     height: 0.75em;
     width: 0.8em;
     transition: 300ms;
+}
+
+/*
+ * Dark theme
+ */
+
+ .dark .sidebar,
+ .dark .outercontainer {
+     background-color: #050505;
+ }
+
+ .dark .sidebar *,
+ .dark .post-title,
+ .dark .post-title a,
+ .dark .page-title,
+ .dark .related>h2,
+ .dark .authored-posts>h2 {
+     color: #d8d8d8;
+ }
+
+ .dark .sidebar *.sub {
+    color: #808080;
+ }
+
+ .dark .content.container {
+     background-color: #080808;
+     box-shadow: 0 0 25px #000000;
+ }
+
+ .dark .post-content *:not(a),
+ .dark .author-content *:not(a),
+ .dark .post-preview *:not(a) {
+     color: #bbbbbb !important;
+ }
+
+ .dark pre.highlight,
+ .dark code {
+     background-color: #202020;
+ }
+
+ .dark .tag {
+    color: #d8d8d8;
+    background-color: #404040;
+ }
+
+ .dark .tag:hover {
+    box-shadow: 0 0 35px #000000;
+    background-color: #202020;
+    transition: 150ms;
+ }
+
+ .dark .author-details .avatar {
+    box-shadow: 0 0 50px #000000;
+ }
+
+ .dark ul.horizontal.social li a {
+     background-color: #020202;
+     box-shadow: 0 0 50px #000000;
+ }
+ .dark ul.horizontal.social li a:hover {
+    background-color: #aaaaaa;
 }
 
 /*

@@ -29,7 +29,9 @@ description: >-
       {% endif %}
     </span>
 
-    {{ post.content | split:"<!--break-->" | first }}
+    <div class="post-preview">
+      {{ post.content | split:"<!--break-->" | first }}
+    </div>
     {% if post.content contains "<!--break-->" %}
     {% if post.content contains "<!--break--><!--n-->" %}
       <br/>

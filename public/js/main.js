@@ -14,6 +14,10 @@ function toggleExpandedContent() {
 	document.body.classList.toggle("expanded")
 }
 
+function toggleDarkTheme() {
+	document.body.classList.toggle("dark")
+}
+
 
 $(document).ready(function () {
 
@@ -52,4 +56,13 @@ AOS.init({
 	duration: 300,
 	once: true,
 	disable: "mobile"
-});
+})
+
+$(document).on("keypress", function(e) {
+	var tag = e.target.tagName.toLowerCase()
+    if (e.which == 102 && tag != 'input' && tag != 'textarea') {
+		toggleExpandedContent()
+	} else if (e.which === 100 && tag != 'input' && tag != 'textarea') {
+		toggleDarkTheme()
+	}
+})

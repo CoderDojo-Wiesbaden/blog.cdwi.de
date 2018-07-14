@@ -10,8 +10,10 @@ layout: default
     {% else %}
       Am {{ page.date | date: "%d.%m.%Y" }}
     {% endif %}
-    </span>
-  {{ content }}
+  </span>
+  <div class="post-content">
+    {{ content }}
+  </div>
 </div>
 
 <div class="taglist">

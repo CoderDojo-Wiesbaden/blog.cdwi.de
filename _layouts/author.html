@@ -7,7 +7,9 @@ layout: default
   <div class="author-details center narrow">
     <img src="{{ page.imageurl }}" class="avatar" alt="Ein Bild von {{ page.shortname }}" />
     <h1 class="page-title">{{ page.longname }}</h1>
-    {{ content }}
+    <div class="author-content">
+      {{ content }}
+    </div>
 
     <ul class="horizontal social">
       {% if page.github != nil %}
