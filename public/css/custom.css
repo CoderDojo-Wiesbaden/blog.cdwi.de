@@ -195,8 +195,16 @@ ul.footer {
     transition: 300ms;
 }
 
+/*
+ * Post page
+ */
+
 .more-posts li a:hover small {
     text-decoration: none;
+}
+
+li.notrelated a {
+    color: #3b5998;
 }
 
 /*
@@ -391,6 +399,10 @@ ul.horizontal li>* {
     background-image: url(../icons/web.svg);
     background-size: 1.4em;
 }
+
+/*
+ * Tools
+ */
 
 .invisible {
     background: transparent !important;
