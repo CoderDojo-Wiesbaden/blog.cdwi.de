@@ -1,26 +1,29 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
 
-    <div class="sidebar-about">
-      {% if page.permalink == nil %}
+    <div class="sidebar-content">
+      <div class="sidebar-about">
+        {% if page.permalink == nil %}
         <a href="https://cdwi.de/b" class="shortlink sub">{{ site.shorturl }}</a>
-      {% else %}
-        <a href="https://cdwi.de/b/{{ page.permalink | remove: '/'}}" class="shortlink sub">{{ site.shorturl }}/{{ page.permalink | remove: "/"}}</a>
-      {% endif %}
-      <h1 class="title">
-        <a href="{{ site.baseurl }}">
-          {{ site.title }}
-        </a>
-      </h1>
-      <p class="lead">{{ site.description.main }}</p>
-      <p class="lead sub">{{ site.description.sub }}</p>
+        {% else %}
+        <a href="https://cdwi.de/b/{{ page.permalink | remove: '/'}}" class="shortlink sub">{{ site.shorturl }}/{{ page.permalink | remove_first: "/"}}</a>
+        {% endif %}
+        <h1 class="title">
+          <a href="{{ site.baseurl }}">
+            {{ site.title }}
+          </a>
+        </h1>
+        <p class="lead">{{ site.description.main }}</p>
+        <p class="lead sub">{{ site.description.sub }}</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="{{ site.mainurl }}">CoderDojo Wiesbaden</a>
+        <a class="sidebar-nav-item" href="https://github.com/{{ site.github.org }}">GitHub</a>
+      </nav>
+
     </div>
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="{{ site.mainurl }}">CoderDojo Wiesbaden</a>
-      <a class="sidebar-nav-item" href="https://github.com/{{ site.github.org }}">GitHub</a>
-    </nav>
-
-        <div id="expand-icon" class="invisible" onclick="toggleExpandedContent()"></div>
+    <div id="expand-icon" class="invisible" onclick="toggleExpandedContent()"></div>
   </div>
 </div>

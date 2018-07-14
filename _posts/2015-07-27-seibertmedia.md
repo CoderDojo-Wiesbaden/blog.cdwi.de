@@ -2,7 +2,7 @@
 layout: post
 title: Programmierkurse bei Seibert Media in Wiesbaden
 permalink: /seibert
-tags: [Seibert, Kurs, Angebot]
+tags: [Seibert, Kurs, Angebot, Archiv]
 author: Benjamin
 ---
 

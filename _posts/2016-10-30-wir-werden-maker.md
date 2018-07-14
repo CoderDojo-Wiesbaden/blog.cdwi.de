@@ -2,7 +2,7 @@
 layout: post
 title: Wir werden Maker
 permalink: /makerwerden
-tags: [Maker, 3D-Drucker, CAD]
+tags: [Maker, 3D-Drucker, CAD, Archiv]
 author: Benjamin
 ---
 

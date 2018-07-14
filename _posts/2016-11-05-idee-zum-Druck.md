@@ -2,7 +2,7 @@
 layout: post
 title: Von der Idee zum 3D-Druck
 permalink: /druckidee
-tags: [3D-Drucker, CAD, Problem]
+tags: [3D-Drucker, CAD, Problem, Archiv]
 author: Benjamin
 ---
 

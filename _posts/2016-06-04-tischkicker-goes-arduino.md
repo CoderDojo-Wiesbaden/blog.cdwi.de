@@ -2,7 +2,7 @@
 layout: post
 title: Tischkicker goes Arduino
 permalink: /tischkicker
-tags: [Arduino, Tischkicker, Code]
+tags: [Arduino, Tischkicker, Code, Archiv]
 author: Benjamin
 ---
 

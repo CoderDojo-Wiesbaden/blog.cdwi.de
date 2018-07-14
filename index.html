@@ -17,7 +17,7 @@ description: >-
 
     <span class="post-details">
       {% if post.author != null %}
-        {{ post.author }}, {{ post.date | date: "%d.%m.%Y" }}
+        <a href="{{ baseurl }}autor/{{ post.author }}">{{ post.author }}</a>, {{ post.date | date: "%d.%m.%Y" }}
       {% else %}
         {{ post.date | date: "%d.%m.%Y" }}
       {% endif %}

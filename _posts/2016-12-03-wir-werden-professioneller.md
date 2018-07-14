@@ -2,7 +2,7 @@
 layout: post
 title: Wir werden professioneller... Irgendwie
 permalink: /druckerda
-tags: [3D-Drucker]
+tags: [3D-Drucker, Archiv]
 author: Benjamin
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Mehr Arbeitsplätze und bald ein 3D-Drucker
 permalink: /mehrplatze
-tags: [Spezial, Ferien, 3D-Drucker, Ausbau]
+tags: [Spezial, Ferien, 3D-Drucker, Ausbau, Archiv]
 author: Benjamin
 ---
 
