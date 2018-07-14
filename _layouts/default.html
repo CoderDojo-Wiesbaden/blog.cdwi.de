@@ -12,11 +12,17 @@ layout: compress
   {% include sidebar.html %}
 
   <div class="outercontainer">
-    <div id="content" class="content container">
+    <div id="content" class="content container oldheigth">
       <a href="#content">
         <div id="pulltab" class="pulltab invisible" onclick="fixHoverState"></div>
       </a>
-      {{ content }}
+      <div class="innercontainer fadeupsmall"
+          {% if page.name != "index.html" %}
+            data-aos="fade-up-small"
+          {% endif %}
+          >
+        {{ content }}
+      </div>
     </div>
 
     <div class="footer">
@@ -25,8 +31,8 @@ layout: compress
   </div>
 
   <script type="text/javascript">
-    window.addEventListener("load", () => {
 
+    window.addEventListener("load", () => {
       var jquery = document.createElement("script");
       jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
       document.body.appendChild(jquery);

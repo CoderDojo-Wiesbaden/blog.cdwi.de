@@ -150,6 +150,10 @@ div.content.container {
     box-shadow: 0 0 15px #cccccc;
 }
 
+div.innercontainer {
+    background-color: #ffffff;
+}
+
 a.pagination-item {
     border: 1px solid #aaaaaa;
 }
@@ -418,4 +422,71 @@ ul.horizontal li>* {
 
 .narrow {
     max-width: 38em;
+}
+
+
+/*
+ * Scroll animations
+ */
+
+
+[data-aos][data-aos][data-aos-duration="50"],
+body[data-aos-duration="50"] [data-aos] {
+    transition-duration: 50ms
+}
+
+[data-aos][data-aos][data-aos-delay="50"],
+body[data-aos-delay="50"] [data-aos] {
+    transition-delay: 0
+}
+
+[data-aos][data-aos][data-aos-delay="50"].aos-animate,
+body[data-aos-delay="50"] [data-aos].aos-animate {
+    transition-delay: 50ms
+}
+
+[data-aos][data-aos][data-aos-duration="300"],
+body[data-aos-duration="300"] [data-aos] {
+    transition-duration: .3s
+}
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0)
+}
+
+[data-aos="fade-up"] {
+    transform: translate(0, 4em);
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos="fade-up-small"] {
+    transform: translate(0, 1em);
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos="fade-up-small"].aos-animate {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+[data-aos="fade"] {
+    opacity: 0;
+}
+
+[data-aos="fade"].aos-animate {
+    opacity: 1;
+}
+
+.fadeout.active {
+    opacity: 0 !important;
+    transition: 150ms !important;
+}
+
+.fadeupsmall.active {
+    transform: translate(0, 1.5em) !important;
+    opacity: 0 !important;
+    transition: 150ms !important;
 }

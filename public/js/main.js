@@ -1,13 +1,13 @@
 document.getElementById("pulltab").classList.remove("invisible");
 if (document.body.classList.contains("post"))
-document.getElementById("expand-icon").classList.remove("invisible");
+	document.getElementById("expand-icon").classList.remove("invisible");
 
 function fixHoverState() {
-    var el = this
-    var par = el.parentNode
-    var next = el.nextSibling
-    par.removeChild(el)
-    setTimeout(function() {par.insertBefore(el, next);}, 0)
+	var el = this
+	var par = el.parentNode
+	var next = el.nextSibling
+	par.removeChild(el)
+	setTimeout(function () { par.insertBefore(el, next); }, 0)
 }
 
 function toggleExpandedContent() {
@@ -39,4 +39,17 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
+});
+
+$("a").click(function () {
+	$(".fadeout").toggleClass("active")
+	$(".fadeupsmall").toggleClass("active")
+	$(".aosout").toggleClass("aos-animate")
+});
+
+
+AOS.init({
+	duration: 300,
+	once: true,
+	disable: "mobile"
 });

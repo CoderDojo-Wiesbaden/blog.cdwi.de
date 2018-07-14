@@ -1,5 +1,6 @@
 ---
 layout: default
+type: index
 permalink:
 description: >-
   Der Blog des Wiesbadener CoderDojos.
@@ -7,8 +8,13 @@ description: >-
 ---
 
 <div class="posts">
+  {% assign counter = 0 %}
   {% for post in paginator.posts %}
-  <div class="post homesite">
+  {% if counter == 1 %}
+    <div class="post homesite" data-aos="fade-up" data-aos-delay="50">
+  {% else %}
+    <div class="post homesite" data-aos="fade-up">
+  {% endif %}
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
@@ -31,12 +37,17 @@ description: >-
     {% endif %}
       <br/>
       <a href="{{ post.url }}">Weiterlesen...</a>
+    {% else %}
+      <br/>
+      <a href="{{ post.url }}">Beitrag anzeigen &rarr;</a>
     {% endif %}
   </div>
+
+  {% assign counter = counter | plus: 1 %}
   {% endfor %}
 </div>
 
-<div class="pagination">
+<div class="pagination" data-aos="fade-up">
   {% if paginator.next_page == falsy and paginator.previous_page == falsy %}
     <p>Das sind alle Beiträge.</p>
   {% elsif paginator.next_page != falsy and paginator.previous_page == falsy %}
