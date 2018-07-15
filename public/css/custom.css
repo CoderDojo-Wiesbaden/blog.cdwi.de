@@ -36,6 +36,20 @@ div.homesite.post {
     border-bottom: 1px solid #aaaaaa;
 }
 
+#darktheme-icon {
+    display: block;
+    background-image: url("../icons/darktheme.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 1;
+    width: 2em;
+    height: 2em;
+    margin-left: 13em;
+    position: absolute;
+    transition: 800ms;
+}
+
 #expand-icon {
     display: none;
 }
@@ -83,6 +97,11 @@ strong {
     box-shadow: 0 0 25px #9a9a9a;
     text-decoration: none;
     transition: 150ms;
+}
+
+pre.highlight,
+code {
+    transition: 800ms;
 }
 
 /* Meta data line below post title */
@@ -212,10 +231,12 @@ ul.footer {
  .dark .related>h2,
  .dark .authored-posts>h2 {
      color: #d8d8d8;
+     transition: 800ms;
  }
 
  .dark .sidebar *.sub {
     color: #808080;
+    transition: 800ms;
  }
 
  .dark .content.container {
@@ -227,11 +248,13 @@ ul.footer {
  .dark .author-content *:not(a),
  .dark .post-preview *:not(a) {
      color: #bbbbbb !important;
+     transition: 800ms;
  }
 
  .dark pre.highlight,
  .dark code {
      background-color: #202020;
+     transition: 800ms;
  }
 
  .dark .tag {
@@ -256,6 +279,16 @@ ul.footer {
  .dark ul.horizontal.social li a:hover {
     background-color: #aaaaaa;
 }
+
+.dark.expanded div.outercontainer,
+.dark.expanded div.sidebar {
+    background-color: #080808;
+}
+
+.dark #darktheme-icon {
+    background-image: url("../icons/darktheme-fill.svg");
+}
+
 
 /*
  * Post page
@@ -314,6 +347,7 @@ li.notrelated a {
         background-image: url("../icons/arrow_left.svg");
         background-position: center;
         background-repeat: no-repeat;
+        opacity: 1;
         width: 2em;
         height: 2em;
         margin-left: 15em;
@@ -465,6 +499,10 @@ ul.horizontal li>* {
 /*
  * Tools
  */
+
+ .noanimation * {
+     transition: none !important;
+ }
 
 .invisible {
     background: transparent !important;

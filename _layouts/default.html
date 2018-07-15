@@ -32,6 +32,17 @@ layout: compress
 
   <script type="text/javascript">
 
+    cookie = decodeURIComponent(document.cookie);
+    cookie = cookie.split("dark=")[1].split(";")[0];
+    if (cookie == "true") {
+      document.body.classList.add("noanimation");
+      document.body.classList.add("dark");
+      setTimeout(() => {
+        document.body.classList.remove("noanimation");
+      }, 10);
+    }
+
+
     window.addEventListener("load", () => {
       var jquery = document.createElement("script");
       jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
@@ -41,8 +52,7 @@ layout: compress
         var mainjs = document.createElement("script");
         mainjs.src = "/public/js/main.js";
         document.body.appendChild(mainjs);
-      });
-
+      })
     }, false);
 
     /*function downloadJSAtOnload() {
