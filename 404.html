@@ -4,8 +4,8 @@ layout: default
 
 <style type="text/css" media="screen">
   .container {
-    margin: 10px auto;
-    max-width: 600px;
+    max-width: 38em;
+    margin: 0 0 3em 0;
     text-align: center;
   }
   h1 {
@@ -19,13 +19,17 @@ layout: default
 <div class="container">
   <h1>404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p><strong>Wir konnten die Seite nicht finden :(</strong></p>
+  <p>Wir leiten dich in Kürze weiter.</p>
 </div>
 
 
 <script>
-  if (!document.referrer.includes("https://coderdojo-wiesbaden.de/")) {
-    document.location.replace("https://coderdojo-wiesbaden.de/" + window.location.href.replace("https://blog.cdwi.de/", "").replace("http://localhost:4000/", ""));
+  if (!document.location.href.includes("?noredir")) {
+    if (!document.referrer.includes("{{ site.mainurl }}")) {
+      document.location.replace("{{ site.mainurl }}/" + window.location.href.replace("https://blog.cdwi.de/", "").replace("http://localhost:4000/", ""));
+    } else {
+      document.location.replace("{{ site.baseurl }}?404");
+    }
   }
 </script>

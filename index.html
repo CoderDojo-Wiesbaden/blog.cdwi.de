@@ -7,6 +7,15 @@ description: >-
   Lies ihn. Lerne etwas. Lass dich inspirieren. 
 ---
 
+<div id="404" class="gone post homesite">
+  <h2>Wir haben dich weitergeleitet</h2>
+  <p>
+    Wir konnten die Seite, die du aufrufen wolltest, nicht finden.<br/>
+    Daher haben wir dich auf die Startseite geleitet.<br/>
+  <small>Fehler 404 • <a href="https://github.com/koenidv/blog.coderdojo-wiesbaden.de/issues/new" class="alt">Fehler melden</a></small>
+  </p>
+</div>
+
 <div class="posts">
   {% assign counter = 0 %}
   {% for post in paginator.posts %}
@@ -75,7 +84,11 @@ description: >-
 </div>
 
 <script>
-  if ('serviceWorker' in navigator) {
+  if (window.location.href.includes("?404")) {
+    document.getElementById("404").classList.remove("gone");
+  }
+
+  /*if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
         // Registration was successful
@@ -85,5 +98,5 @@ description: >-
         console.log('ServiceWorker registration failed: ', err);
       });
     });
-  }
+  }*/
 </script>
