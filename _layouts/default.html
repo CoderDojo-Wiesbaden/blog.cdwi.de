@@ -33,13 +33,15 @@ layout: compress
   <script type="text/javascript">
 
     cookie = decodeURIComponent(document.cookie);
-    cookie = cookie.split("dark=")[1].split(";")[0];
-    if (cookie == "true") {
-      document.body.classList.add("noanimation");
-      document.body.classList.add("dark");
-      setTimeout(() => {
-        document.body.classList.remove("noanimation");
-      }, 10);
+    if (cookie.includes("dark=")) {
+      cookie = cookie.split("dark=")[1].split(";")[0];
+      if (cookie == "true") {
+        document.body.classList.add("noanimation");
+        document.body.classList.add("dark");
+        setTimeout(() => {
+          document.body.classList.remove("noanimation");
+        }, 10);
+      }
     }
 
 
