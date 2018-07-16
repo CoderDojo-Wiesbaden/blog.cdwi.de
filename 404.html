@@ -26,7 +26,7 @@ layout: default
 
 <script>
   if (!document.location.href.includes("?noredir")) {
-    if (!document.referrer.includes("{{ site.mainurl }}") && !document.referrer.includes("{{ site.url }}") && document.referrer != "") {
+    if (!document.referrer.includes("{{ site.mainurl }}") && !document.referrer.includes("{{ site.url }}")) {
       document.location.replace("{{ site.mainurl }}/" + window.location.href.replace("https://blog.cdwi.de/", "").replace("http://localhost:4000/", ""));
     } else {
       document.location.replace("{{ site.baseurl }}?404");
