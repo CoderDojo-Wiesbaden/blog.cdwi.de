@@ -22,3 +22,10 @@ layout: default
   <p><strong>Page not found :(</strong></p>
   <p>The requested page could not be found.</p>
 </div>
+
+
+<script>
+  if (!document.referrer.includes("https://coderdojo-wiesbaden.de/")) {
+    document.location.replace("https://coderdojo-wiesbaden.de/" + window.location.href.replace("https://blog.cdwi.de/", "").replace("http://localhost:4000/", ""));
+  }
+</script>

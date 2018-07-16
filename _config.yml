@@ -28,7 +28,7 @@ searchdescription: >-
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: https://blog.coderdojo-wiesbaden.de # the base hostname & protocol for your site, e.g. http://example.com
 mainurl: https://coderdojo-wiesbaden.de
-shorturl: cdwi.de/b
+shorturl: cdwi.de
 
 github:
   org: CoderDojo-Wiesbaden
