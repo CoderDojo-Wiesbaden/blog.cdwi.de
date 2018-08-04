@@ -1,7 +1,7 @@
 ---
 layout: author
 author: Benjamin
-longname: Benjamin Dahlhoff
+longname: Benjamin
 shortname: Benjamin
 imageurl: https://avatars1.githubusercontent.com/u/18646682?s=300&v=4
 github: bedawi
