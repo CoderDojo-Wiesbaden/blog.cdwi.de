@@ -1,32 +1,32 @@
-<div class="sidebar-hover-disabled">
-  <div class="sidebar">
-    <div class="container sidebar-sticky">
 
-      <div class="sidebar-content">
-        <div class="sidebar-about">
-          {% if page.permalink == nil %}
-          <a href="https://{{ site.shorturl }}" class="shortlink sub">{{ site.shorturl }}</a>
-          {% else %}
-          <a href="https://{{ site.shorturl }}/{{ page.permalink | remove_first: '/'}}" class="shortlink sub">{{ site.shorturl }}<span class="sub fadeout" data-aos="fade">/{{ page.permalink | remove_first: "/"}}</span></a>
-          {% endif %}
-          <h1 class="title">
-            <a href="{{ site.baseurl }}">
-              {{ site.title }}
-            </a>
-          </h1>
-          <p class="lead">{{ site.description.main }}</p>
-          <p class="lead sub">{{ site.description.sub }}</p>
-        </div>
+<div class="sidebar">
+    <div class="sidebar-hover"></div>
+  <div class="container sidebar-sticky">
 
-        <nav class="sidebar-nav">
-          <a class="sidebar-nav-item" href="{{ site.mainurl }}">CoderDojo Wiesbaden</a>
-          <a class="sidebar-nav-item" href="https://github.com/{{ site.github.org }}">GitHub</a>
-        </nav>
-
+    <div class="sidebar-content">
+      <div class="sidebar-about">
+        {% if page.permalink == nil %}
+        <a href="https://{{ site.shorturl }}" class="shortlink sub">{{ site.shorturl }}</a>
+        {% else %}
+        <a href="https://{{ site.shorturl }}/{{ page.permalink | remove_first: '/'}}" class="shortlink sub">{{ site.shorturl }}<span class="sub fadeout" data-aos="fade">/{{ page.permalink | remove_first: "/"}}</span></a>
+        {% endif %}
+        <h1 class="title">
+          <a href="{{ site.baseurl }}">
+            {{ site.title }}
+          </a>
+        </h1>
+        <p class="lead">{{ site.description.main }}</p>
+        <p class="lead sub">{{ site.description.sub }}</p>
       </div>
 
-      <div id="darktheme-icon" onclick="toggleDarkTheme()"></div>
-      <div id="expand-icon" class="invisible fadeout" onclick="toggleExpandedContent()"></div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="{{ site.mainurl }}">CoderDojo Wiesbaden</a>
+        <a class="sidebar-nav-item" href="https://github.com/{{ site.github.org }}">GitHub</a>
+      </nav>
+
     </div>
+
+    <div id="darktheme-icon" onclick="toggleDarkTheme()"></div>
+    <div id="expand-icon" class="invisible fadeout" onclick="toggleExpandedContent()"></div>
   </div>
 </div>

@@ -11,16 +11,32 @@ function fixHoverState() {
 }
 
 function toggleExpandedContent() {
-	document.body.classList.toggle("expanded")
+	var bodyclasses = document.body.classList
+	if (bodyclasses.contains("post")) {
+		bodyclasses.toggle("expanded")
+
+		if (bodyclasses.contains("finished")) {
+			bodyclasses.remove("finished")
+		} else {
+			setTimeout(() => {
+				bodyclasses.add("finished")
+			}, 700)
+		}
+	}
 }
 
 function toggleDarkTheme() {
 	document.body.classList.toggle("dark")
 	var d = new Date();
-    d.setTime(d.getTime() + (365*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = "dark" + "=" + document.body.classList.contains("dark") + ";" + expires + ";path=/";
+	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
+	var expires = "expires=" + d.toUTCString();
+	document.cookie = "dark" + "=" + document.body.classList.contains("dark") + ";" + expires + ";path=/";
 }
+
+// Set Theme by URL
+var themeUnchecked = getParameterByName('d')
+//Theme parameter will remain unchecked. May be possible to do some fun things.
+document.body.classList.toggle(themeUnchecked)
 
 
 $(document).ready(function () {
@@ -62,11 +78,22 @@ AOS.init({
 	disable: "mobile"
 })
 
-$(document).on("keypress", function(e) {
+$(document).on("keypress", function (e) {
 	var tag = e.target.tagName.toLowerCase()
-    if (e.which == 102 && tag != 'input' && tag != 'textarea') {
+	if (e.which == 102 && tag != 'input' && tag != 'textarea') {
 		toggleExpandedContent()
 	} else if (e.which === 100 && tag != 'input' && tag != 'textarea') {
 		toggleDarkTheme()
 	}
 })
+
+// Parse the URL parameter
+function getParameterByName(name, url) {
+	if (!url) url = window.location.href;
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
