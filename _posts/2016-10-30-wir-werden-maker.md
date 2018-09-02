@@ -4,6 +4,7 @@ title: Wir werden Maker
 permalink: /makerwerden
 tags: [Maker, 3D-Drucker, CAD, Archiv]
 author: Benjamin
+description: Es gibt etwas Neues im CoderDojo. Etwas mit 3D und Drucken...
 ---
 
 > Maker [mæ͜ɪkə] (engl. für ‚Schöpfer‘ oder ‚Hersteller‘) ist die Bezeichnung für eine Subkultur, die man auch als Do-It-Yourself-Kultur mit dem Einsatz aktueller Technik beschreiben kann.

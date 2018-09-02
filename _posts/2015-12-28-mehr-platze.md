@@ -4,6 +4,7 @@ title: Mehr Arbeitsplätze und bald ein 3D-Drucker
 permalink: /mehrplatze
 tags: [Spezial, Ferien, 3D-Drucker, Ausbau, Archiv]
 author: Benjamin
+description: Es wächst und wächst und wird umgebaut.
 ---
 
 Heute haben wir ein Ferien-Dojo durchgeführt und dabei die neuen Tische fertig aufgebaut und die Arbeitsplätze vernetzt. Insgesamt stehen nun 7 fest installierte PC, davon 2 Stück mit Windows 10, zur Verfügung. Die acht Tische stehen nun in Zweiergruppen zusammen und haben auch genügend Strom- und USB-Anschlüsse für Eure Laptops, Tablets und Smartphones.

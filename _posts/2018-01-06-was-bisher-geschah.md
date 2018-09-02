@@ -4,6 +4,7 @@ title: Was bisher geschah...
 permalink: /bisher
 tags: [Ausbau, Raum, Aenderung, Interview, Medien, Spezial, Archiv]
 author: Florian
+description: Schon ein halbes Jahr seit dem letzten Beitrag? Das gab es Neues.
 ---
 
 Nach einer Frühling-bis-Winter-Pause ist dieser Blog nun zurück. Hier ist Alles, was du vielleicht verpasst hast:

@@ -4,6 +4,7 @@ title: Wir haben einen neuen Blog
 permalink: /neuanfang
 tags: [Neu, Aenderung, Blog, Web, Projekt, Design, Code]
 author: Florian
+description: Dieser Blog ist neu und schick. Finde heraus, wie wir ihn erstellt haben.
 ---
 
 Als wir Anfang des Jahres von Squarespace als CMS und Hoster zu Firebase als Hoster und einer statischen Website umgezogen sind, mussten wir leider unseren Blog enden lassen.
