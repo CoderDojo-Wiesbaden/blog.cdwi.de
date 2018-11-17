@@ -8,23 +8,6 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [
-      {
-        "source": "/anmelden",
-        "destination": "https://coderdojo-wiesbaden.de/anmeldung",
-        "type": 301
-      },
-      {
-        "source": "/a",
-        "destination": "https://zen.coderdojo.com/dojos/de/wiesbaden/wiesbaden-at-st-bonifatius",
-        "type": 301
-      },
-      {
-        "source": "/termine",
-        "destination": "https://coderdojo-wiesbaden.de/anmeldung#termine",
-        "type": 301
-      }
-    ],
     "headers": [
       {
         "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
