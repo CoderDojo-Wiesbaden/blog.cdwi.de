@@ -18,7 +18,7 @@ layout: default
 
 <div class="taglist">
   {% for tag in page.tags %}
-    <small><a href="{{ site.baseurl }}tag/{{ tag }}" class="tag">{{ tag }}</a></small>
+    <small><a href="{{ site.baseurl }}tag/{{ tag | downcase }}" class="tag">{{ tag }}</a></small>
   {% endfor %}
 </div>
 
