@@ -15,7 +15,7 @@ Heute fand das erste wiesbadener CoderDojo in 2019 statt. Zwei Wochen später, w
 <br/> 
 ### Wie geht es jetzt weiter?
 
-<br/>​
+<br/>
 Wir bemühen uns, eine neue Bleibe zu finden. Unser aktueller Favorit: Eine Kooperation mit dem [Chaos Computer Club Wiesbaden](https://cccwi.de). Dort könnten wir dann unsere Mission, jungen Menschen die wunderbare Welt der Computer und des Programmierens nahe zu bringen.
 
 <hr/>
