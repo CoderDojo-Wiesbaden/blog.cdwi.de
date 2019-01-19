@@ -8,9 +8,6 @@ author: Florian
 description: Heute fand das letzte Dojo in den Jugendräumend der Bonifatiuskirche statt.
 
 ---
-
-​
-
 Heute fand das erste wiesbadener CoderDojo in 2019 statt. Zwei Wochen später, weil Anfang des Monats noch Schulferien waren. **Dieses Dojo wird das letzte gewesen sein, welches in den Jugendräumen der Bonifatiuskirche stattfand.**
 
 <!--break-->
