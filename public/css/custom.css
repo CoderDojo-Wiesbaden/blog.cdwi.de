@@ -122,6 +122,14 @@ code {
     transition: 800ms;
 }
 
+/* post image */
+.post-image {
+    max-height: 10em;
+    min-width: 80%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
 /* Meta data line below post title */
 
 .post-details {

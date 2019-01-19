@@ -28,6 +28,7 @@ description: >-
   {% else %}
     <div class="post homesite" data-aos="fade-up">
   {% endif %}
+  
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
@@ -41,6 +42,10 @@ description: >-
         {{ post.date | date: "%d.%m.%Y" }}
       {% endif %}
     </span>
+
+    {% if post.image != nil %}
+      <img src="{{ post.image }}" class="post-image"/>
+    {% endif %}
 
     <div class="post-preview">
       {{ post.content | split:"<!--break-->" | first }}
