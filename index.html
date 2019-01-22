@@ -43,13 +43,14 @@ description: >-
       {% endif %}
     </span>
 
-    {% if post.image != nil %}
-      <img src="{{ post.image }}" class="post-image"/>
-    {% endif %}
-
     <div class="post-preview">
       {{ post.content | split:"<!--break-->" | first }}
     </div>
+
+    {% if post.image != nil %}
+    <img src="{{ post.image }}" class="post-image"/>
+  {% endif %}
+
     {% if post.content contains "<!--break-->" %}
     {% if post.content contains "<!--break--><!--n-->" %}
       <br/>
