@@ -1,0 +1,15 @@
+---
+layout: outer
+---
+    <div id="content" class="content container oldheigth">
+      <a href="#content">
+        <div id="pulltab" class="pulltab invisible" onclick="fixHoverState"></div>
+      </a>
+      <div class="innercontainer fadeupsmall"
+          {% if page.name != "index.html" %}
+            data-aos="fade-up-small"
+          {% endif %}
+          >
+        {{ content }}
+      </div>
+    </div>

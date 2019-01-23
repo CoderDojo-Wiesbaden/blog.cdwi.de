@@ -196,6 +196,12 @@ div.content.container {
     box-shadow: 0 0 15px #cccccc;
 }
 
+div.content.container.legal {
+    border-radius: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+}
+
 a.pagination-item {
     border: 1px solid #aaaaaa;
 }
@@ -422,6 +428,9 @@ li.notrelated a {
         border-bottom-left-radius: 1em;
         border-bottom-right-radius: 0;
         transition: 800ms;
+    }
+    div.content.container.legal {
+        max-width: 56em;
     }
     div.posts,
     div.pagination {

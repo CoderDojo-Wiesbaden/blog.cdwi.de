@@ -1,5 +1,4 @@
 ---
-
 layout: post
 title: Das letzte Dojo in der Boni
 permalink: /ortswechsel

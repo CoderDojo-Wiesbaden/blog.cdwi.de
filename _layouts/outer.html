@@ -1,0 +1,86 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="de">
+
+{% include head.html %}
+
+<body class="{{ page.layout }}">
+
+    {% include sidebar.html %}
+
+    <div class="outercontainer">
+
+        {{ content }}
+
+
+        <div class="footer">
+            {% include footer.html %}
+        </div>
+    </div>
+
+    <noscript>
+        <style>
+            [data-aos="fade-up"] {
+                transform: translate(0);
+                opacity: 1;
+            }
+            [data-aos="fade-up-small"] {
+                transform: translate(0);
+                opacity: 1;
+            }
+            [data-aos="fade"] {
+                opacity: 1;
+            }
+      </style>
+    </noscript>
+
+    <script type="text/javascript">
+
+        cookie = decodeURIComponent(document.cookie);
+        if (cookie.includes("dark=")) {
+            cookie = cookie.split("dark=")[1].split(";")[0];
+            if (cookie == "true") {
+                document.body.classList.add("noanimation");
+                document.body.classList.add("dark");
+                setTimeout(() => {
+                    document.body.classList.remove("noanimation");
+                }, 10);
+            }
+        }
+
+
+        window.addEventListener("load", () => {
+            var jquery = document.createElement("script");
+            jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+            document.body.appendChild(jquery);
+
+            jquery.addEventListener("load", () => {
+                var mainjs = document.createElement("script");
+                mainjs.src = "/public/js/main.js";
+                document.body.appendChild(mainjs);
+            })
+        }, false);
+
+        /*function downloadJSAtOnload() {
+          var jquery = document.createElement("script");
+          jquery.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+          document.body.appendChild(jquery);
+          jquery.addEventListener("load", () => {
+            var mainjs = document.createElement("script");
+            mainjs.src = "/public/js/main.js";
+            document.body.appendChild(mainjs);
+          });
+        }
+        if (window.addEventListener)
+          window.addEventListener("load", downloadJSAtOnload, false);
+        else if (window.attachEvent)
+          window.attachEvent("onload", downloadJSAtOnload);
+        else window.onload = downloadJSAtOnload;*/
+    </script>
+
+</body>
+
+</html>

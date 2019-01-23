@@ -26,7 +26,9 @@
 
     </div>
 
-    <div id="darktheme-icon" onclick="toggleDarkTheme()"></div>
+    {% if page.name != "rechtliches.html" %}
+      <div id="darktheme-icon" onclick="toggleDarkTheme()"></div>
+    {% endif %}
     <div id="expand-icon" class="invisible fadeout" onclick="toggleExpandedContent()"></div>
   </div>
 </div>
