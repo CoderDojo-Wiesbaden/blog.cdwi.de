@@ -8,10 +8,13 @@
         {% if page.permalink == nil %}
         <a href="https://{{ site.shorturl }}" class="shortlink sub">{{ site.shorturl }}</a>
         {% else %}
-        <a href="https://{{ site.shorturl }}/{{ page.permalink | remove_first: '/'}}" class="shortlink sub">{{ site.shorturl }}<span class="sub fadeout" data-aos="fade">/{{ page.permalink | remove_first: "/"}}</span></a>
+        <a href="https://{{ site.shorturl }}/{{ page.permalink | remove_first: '/'}}" class="shortlink sub"data-aos="fade-mobile">{{ site.shorturl }}<span class="sub fadeout" data-aos="fade">/{{ page.permalink | remove_first: "/"}}</span></a>
         {% endif %}
         <h1 class="title">
-          <a href="{{ site.baseurl }}">
+          <a href="{{ site.baseurl }}"
+            {% if page.title != nil %}
+              class="back"
+            {% endif %}>
             {{ site.title }}
           </a>
         </h1>

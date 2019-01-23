@@ -68,8 +68,20 @@ $(document).ready(function () {
 $("a").click(function () {
 	$(".fadeout").toggleClass("active")
 	$(".fadeupsmall").toggleClass("active")
+	$("body").removeClass("expanded")
 	$(".aosout").toggleClass("aos-animate")
-});
+	$(".shortlink").addClass("mobilefadeout")
+})
+
+$("a.preview").click(function () {
+	$("#content").addClass("moveup")
+	$(".sidebar-nav").addClass("mobilefadeout")
+	$(".lead").addClass("mobilefadeout")
+})
+
+$("a.back").click(function() {
+	$("#content").addClass("movedown")
+})
 
 
 AOS.init({

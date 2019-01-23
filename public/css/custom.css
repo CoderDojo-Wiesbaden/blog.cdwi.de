@@ -125,9 +125,17 @@ code {
 /* post image */
 .post-image {
     max-height: 10em;
-    min-width: 80%;
+    min-width: 100%;
     object-fit: cover;
     margin-bottom: 0;
+}
+
+/* Desktop only */
+@media (min-width: 48em) {
+    .post-image {
+        min-width: 80%;
+        object-fit: cover;
+    }
 }
 
 /* Meta data line below post title */
@@ -190,7 +198,7 @@ div.outercontainer {
 div.content.container {
     background-color: #ffffff;
     min-height: 90vh;
-    padding-top: 0.975em;
+    padding-top: 0.675em;
     border-top-right-radius: 1em;
     border-top-left-radius: 1em;
     box-shadow: 0 0 15px #cccccc;
@@ -201,6 +209,23 @@ div.content.container.legal {
     padding-top: 1em;
     margin-bottom: 1em;
 }
+
+/* Mobile only */
+@media (max-width: 48em) {
+    div.content.container.moveup {
+        transform: translateY(-14em);
+        transition: 150ms;
+    }
+    div.content.container.movedown {
+        transform: translateY(14em);
+        transition: 150ms;
+    }
+    .mobilefadeout {
+        opacity: 0;
+        transition: 150ms;
+    }
+}
+
 
 a.pagination-item {
     border: 1px solid #aaaaaa;
@@ -661,6 +686,16 @@ body[data-aos-duration="300"] [data-aos] {
 
 [data-aos="fade"].aos-animate {
     opacity: 1;
+}
+
+@media (max-width: 48em) {
+    [data-aos="fade-mobile"] {
+        opacity: 0;
+    }
+    
+    [data-aos="fade-mobile"].aos-animate {
+        opacity: 1;
+    }
 }
 
 .fadeout.active {

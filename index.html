@@ -23,6 +23,7 @@ description: >-
 <div class="posts">
   {% assign counter = 0 %}
   {% for post in paginator.posts %}
+
   {% if counter == 1 %}
     <div class="post homesite" data-aos="fade-up" data-aos-delay="50">
   {% else %}
@@ -30,7 +31,7 @@ description: >-
   {% endif %}
   
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ post.url }}" class="preview">
         {{ post.title }}
       </a>
     </h1>
@@ -48,7 +49,9 @@ description: >-
     </div>
 
     {% if post.image != nil %}
-    <img src="{{ post.image }}" class="post-image"/>
+      <a href="{{ post.url }}" class="preview">
+        <img src="{{ post.image }}" class="post-image"/>
+      </a>
   {% endif %}
 
     {% if post.content contains "<!--break-->" %}
@@ -57,10 +60,10 @@ description: >-
       <br/>
     {% endif %}
       <br/>
-      <a href="{{ post.url }}">Weiterlesen...</a>
+      <a href="{{ post.url }}" class="preview">Weiterlesen...</a>
     {% else %}
       <br/>
-      <a href="{{ post.url }}">Beitrag anzeigen &rarr;</a>
+      <a href="{{ post.url }}" class="preview">Beitrag anzeigen &rarr;</a>
     {% endif %}
   </div>
 
