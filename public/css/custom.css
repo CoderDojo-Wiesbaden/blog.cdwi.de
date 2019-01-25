@@ -380,10 +380,10 @@ ul.footer {
 @media (max-width: 48em) {
     .dark .sidebar,
     .dark .outercontainer {
-        background-color: #2d2d2d !important;
+        background-color: #252525 !important;
     }
     .dark .content.container {
-        background-color: #202020 !important;
+        background-color: #151515 !important;
     }
 }
 
