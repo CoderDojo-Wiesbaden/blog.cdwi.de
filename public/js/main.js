@@ -81,13 +81,7 @@ $("a.preview").click(function () {
 
 $("a.back").click(function() {
 	$("#content").addClass("movedown")
-})
-
-
-AOS.init({
-	duration: 300,
-	once: true,
-	disable: "mobile"
+	$(".lead").addClass("mobilefadeout")
 })
 
 $(document).on("keypress", function (e) {

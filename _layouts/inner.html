@@ -3,9 +3,9 @@ layout: outer
 ---
     <div id="content" class="content container oldheigth">
       <a href="#content">
-        <div id="pulltab" class="pulltab invisible" onclick="fixHoverState"></div>
+        <div id="pulltab" class="pulltab" onclick="fixHoverState"></div>
       </a>
-      <div class="innercontainer fadeupsmall"
+      <div class="innercontainer fadeupsmall onLoad"
           {% if page.name != "index.html" %}
             data-aos="fade-up-small"
           {% endif %}

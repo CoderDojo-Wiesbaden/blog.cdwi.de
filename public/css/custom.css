@@ -221,8 +221,31 @@ div.content.container.legal {
         transition: 150ms;
     }
     .mobilefadeout {
-        opacity: 0;
-        transition: 150ms;
+        opacity: 0 !important;
+        transition: 150ms !important;
+    }
+    .pulltab {
+        height: 0.3em;
+        width: 2.5em;
+        background-color: #cccccc;
+        border-radius: 10em;
+        /* Using the padding from .content.container */
+        margin-top: 0.225em;
+        margin-bottom: 0.55em;
+        margin-left: auto;
+        margin-right: auto;
+        transition: 300ms;
+    }
+    .dark .pulltab {
+        background-color: #161616;
+    }
+    .pulltab:hover:not(:visited) {
+        background-color: #9a9a9a;
+        margin-top: 0;
+        margin-bottom: 0.325em;
+        height: 0.75em;
+        width: 0.8em;
+        transition: 300ms;
     }
 }
 
@@ -248,28 +271,6 @@ a.pagination-item.fullwidth {
 
 ul.footer {
     display: none;
-}
-
-.pulltab {
-    height: 0.3em;
-    width: 2.5em;
-    background-color: #cccccc;
-    border-radius: 10em;
-    /* Using the padding from .content.container */
-    margin-top: 0.225em;
-    margin-bottom: 0.55em;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 300ms;
-}
-
-.pulltab:hover:not(:visited) {
-    background-color: #9a9a9a;
-    margin-top: 0;
-    margin-bottom: 0.325em;
-    height: 0.75em;
-    width: 0.8em;
-    transition: 300ms;
 }
 
 /*
@@ -316,6 +317,14 @@ ul.footer {
  .blue .post-preview *:not(a) {
      color: #bbbbbb !important;
      transition: 800ms;
+ }
+
+ .dark img {
+     opacity: 0.75;
+ }
+
+ .dark hr {
+     border: 1px solid #404040;
  }
 
  .dark pre.highlight,
@@ -399,7 +408,10 @@ li.notrelated a {
     box-shadow: 0 0 25px #cccccc;
 }
 
-
+/* Hide footer. Below will show the footer on desktop. */
+div.footer {
+    display: none;
+}
 
 /* Desktop only */
 

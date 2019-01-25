@@ -71,7 +71,8 @@ description: >-
   {% endfor %}
 </div>
 
-<div class="pagination" data-aos="fade-up">
+<!--Not animated using data-aos="fade-up" as it is not possible on mobile to scroll far enough down to show it-->
+<div class="pagination">
   {% if paginator.next_page == falsy and paginator.previous_page == falsy %}
     <p>Das sind alle Beiträge.</p>
   {% elsif paginator.next_page != falsy and paginator.previous_page == falsy %}

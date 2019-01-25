@@ -1,28 +1,27 @@
-
 <div class="sidebar">
-    <div class="sidebar-hover"></div>
+  <div class="sidebar-hover"></div>
   <div class="container sidebar-sticky">
 
     <div class="sidebar-content">
       <div class="sidebar-about">
         {% if page.permalink == nil %}
-        <a href="https://{{ site.shorturl }}" class="shortlink sub">{{ site.shorturl }}</a>
+        <a href="https://{{ site.shorturl }}" class="shortlink sub" data-aos="fade-mobile">{{ site.shorturl }}</a>
         {% else %}
-        <a href="https://{{ site.shorturl }}/{{ page.permalink | remove_first: '/'}}" class="shortlink sub"data-aos="fade-mobile">{{ site.shorturl }}<span class="sub fadeout" data-aos="fade">/{{ page.permalink | remove_first: "/"}}</span></a>
+        <a href="https://{{ site.shorturl }}/{{ page.permalink | remove_first: '/'}}" class="shortlink sub" data-aos="fade-mobile">{{
+          site.shorturl }}<span class="sub fadeout" data-aos="fade">/{{ page.permalink | remove_first: "/"}}</span></a>
         {% endif %}
         <h1 class="title">
-          <a href="{{ site.baseurl }}"
-            {% if page.title != nil %}
-              class="back"
-            {% endif %}>
+          <a href="{{ site.baseurl }}" {% if page.title !=nil %} class="back" {% endif %}>
             {{ site.title }}
           </a>
         </h1>
-        <p class="lead">{{ site.description.main }}</p>
-        <p class="lead sub">{{ site.description.sub }}</p>
+        <div class="subtitle" data-aos="fade-mobile">
+          <p class="lead">{{ site.description.main }}</p>
+          <p class="lead sub">{{ site.description.sub }}</p>
+        </div>
       </div>
 
-      <nav class="sidebar-nav">
+      <nav class="sidebar-nav" data-aos="fade-mobile">
         <a class="sidebar-nav-item" href="{{ site.mainurl }}">CoderDojo Wiesbaden</a>
         <a class="sidebar-nav-item" href="https://github.com/{{ site.github.org }}">GitHub</a>
       </nav>
@@ -30,7 +29,7 @@
     </div>
 
     {% if page.name != "rechtliches.html" %}
-      <div id="darktheme-icon" onclick="toggleDarkTheme()"></div>
+    <div id="darktheme-icon" onclick="toggleDarkTheme()"></div>
     {% endif %}
     <div id="expand-icon" class="invisible fadeout" onclick="toggleExpandedContent()"></div>
   </div>
