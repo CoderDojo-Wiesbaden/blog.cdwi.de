@@ -237,7 +237,7 @@ div.content.container.legal {
         transition: 300ms;
     }
     .dark .pulltab {
-        background-color: #2d2d2d;
+        background-color: #303030;
     }
     .pulltab:hover:not(:visited) {
         background-color: #9a9a9a;
@@ -366,6 +366,18 @@ ul.footer {
     background-image: url("../icons/darktheme-fill.svg");
 }
 
+.dark div.homesite.post {
+    border-bottom: 1px solid #404040;
+}
+
+.dark .related {
+    border-top: 1px solid #404040;
+}
+
+.dark blockquote {
+    border-left: .25rem solid #606060;
+}
+
 .blue .sidebar,
 .blue .outercontainer {
     background-color: #242943;
@@ -380,7 +392,7 @@ ul.footer {
 @media (max-width: 48em) {
     .dark .sidebar,
     .dark .outercontainer {
-        background-color: #252525 !important;
+        background-color: #202020 !important;
     }
     .dark .content.container {
         background-color: #151515 !important;
