@@ -23,14 +23,19 @@ function toggleExpandedContent() {
 			}, 700)
 		}
 	}
+	var d = new Date()
+	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
+	var expires = "expires=" + d.toUTCString()
+	document.cookie = "expanded=" + document.body.classList.contains("expanded") + ";" + expires + ";path=/"
+	document.cookie = "lastexpanded=" + document.body.classList.contains("expanded") + ";" + expires + ";path=/"
 }
 
 function toggleDarkTheme() {
 	document.body.classList.toggle("dark")
-	var d = new Date();
-	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000));
-	var expires = "expires=" + d.toUTCString();
-	document.cookie = "dark" + "=" + document.body.classList.contains("dark") + ";" + expires + ";path=/";
+	var d = new Date()
+	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
+	var expires = "expires=" + d.toUTCString()
+	document.cookie = "dark=" + document.body.classList.contains("dark") + ";" + expires + ";path=/"
 }
 
 // Set Theme by URL

@@ -448,6 +448,9 @@ div.footer {
     /*
     * Home page
     */
+    div.footer {
+        display: unset;
+    }
     div.sidebar {
         z-index: 0;
         padding-top: 0;
