@@ -70,7 +70,7 @@ $(document).ready(function () {
 	});
 });
 
-$("a").click(function () {
+$("a:not(.pulltab)").click(function () {
 	$(".fadeout").toggleClass("active")
 	$(".fadeupsmall").toggleClass("active")
 	$("body").removeClass("expanded")
