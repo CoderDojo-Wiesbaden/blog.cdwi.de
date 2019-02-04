@@ -245,7 +245,7 @@ div.content.container.legal {
     .dark .pulltab {
         background-color: #303030;
     }
-    .pulltab:hover:not(:visited) {
+    .pulltab:active {
         background-color: #9a9a9a;
         margin-top: 0;
         margin-bottom: 0.325em;
