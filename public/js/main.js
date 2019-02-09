@@ -23,19 +23,23 @@ function toggleExpandedContent() {
 			}, 700)
 		}
 	}
-	var d = new Date()
-	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
-	var expires = "expires=" + d.toUTCString()
-	document.cookie = "expanded=" + document.body.classList.contains("expanded") + ";" + expires + ";path=/"
-	document.cookie = "lastexpanded=" + document.body.classList.contains("expanded") + ";" + expires + ";path=/"
+	if (!decodeURIComponent(document.cookie).includes("cookies=false")) {
+		var d = new Date()
+		d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
+		var expires = "expires=" + d.toUTCString()
+		document.cookie = "expanded=" + document.body.classList.contains("expanded") + ";" + expires + ";path=/"
+		document.cookie = "lastexpanded=" + document.body.classList.contains("expanded") + ";" + expires + ";path=/"
+	}
 }
 
 function toggleDarkTheme() {
 	document.body.classList.toggle("dark")
-	var d = new Date()
-	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
-	var expires = "expires=" + d.toUTCString()
-	document.cookie = "dark=" + document.body.classList.contains("dark") + ";" + expires + ";path=/"
+	if (!decodeURIComponent(document.cookie).includes("cookies=false")) {
+		var d = new Date()
+		d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
+		var expires = "expires=" + d.toUTCString()
+		document.cookie = "dark=" + document.body.classList.contains("dark") + ";" + expires + ";path=/"
+	}
 }
 
 // Set Theme by URL
@@ -70,7 +74,7 @@ $(document).ready(function () {
 	});
 });
 
-$("a:not(.pulltab)").click(function () {
+$("a:not(.pulltab):not(.noanim)").click(function () {
 	$(".fadeout").toggleClass("active")
 	$(".fadeupsmall").toggleClass("active")
 	$("body").removeClass("expanded")
@@ -84,7 +88,7 @@ $("a.preview").click(function () {
 	$(".lead").addClass("mobilefadeout")
 })
 
-$("a.back").click(function() {
+$("a.back").click(function () {
 	$("#content").addClass("movedown")
 	$(".lead").addClass("mobilefadeout")
 })
