@@ -79,18 +79,21 @@ if (!decodeURIComponent(document.cookie).includes("seencookies=true") && !decode
 	document.getElementById("cookiesNotification").classList.remove("hidden")
 }
 
-function toggleNotificationsView() {
-	var expandableClasses = document.getElementById("notificationsExpandableMobile").classList
-	if (expandableClasses.contains("active")) {
-		document.getElementById("expandNotificationsMobile").innerHTML = "Nachrichten zeigen"
-	} else {
-		document.getElementById("expandNotificationsMobile").innerHTML = "Schließen"
-	}
-	expandableClasses.toggle("active");
-}
-
-
 $(document).ready(function () {
+
+	$("#expandNotificationsMobile").on("touchstart click", function () {
+		var expandableClasses = document.getElementById("notificationsExpandableMobile").classList
+		if (expandableClasses.contains("active")) {
+			document.getElementById("expandNotificationsMobile").innerHTML = "Nachrichten zeigen"
+		} else {
+			document.getElementById("expandNotificationsMobile").innerHTML = "Schließen"
+		}
+		expandableClasses.toggle("active");
+	})
+
+	$("#selectAllNewsletter").on("touchstart click", chooseNewsletter('all'))
+	$("#selectImportantNewsletter").on("touchstart click", chooseNewsletter('important'))
+
 
 	// Add smooth scrolling to all links
 	$("a").on('click', function (event) {
