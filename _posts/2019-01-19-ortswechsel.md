@@ -2,7 +2,7 @@
 layout: post
 title: Das letzte Dojo in der Boni
 permalink: /ortswechsel
-tags: Aenderung Neu Ausbau Raum 
+tags: Aenderung Neu Ausbau Raum Info
 author: Florian
 description: Heute fand das letzte Dojo in den Jugendräumend der Bonifatiuskirche statt.
 image: ..\assets\2019-01-19-ortswechsel\pizza.jpg

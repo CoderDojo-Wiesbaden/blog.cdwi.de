@@ -137,7 +137,7 @@ body {
     -ms-text-size-adjust: 100%;
 }
 
-a {
+a, .a {
     color: #268bd2;
     text-decoration: none;
 }
@@ -147,8 +147,11 @@ a strong {
 }
 
 a:hover,
-a:focus {
+a:focus,
+.a:focus, 
+.a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Headings */

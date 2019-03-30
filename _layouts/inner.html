@@ -1,15 +1,13 @@
 ---
 layout: outer
 ---
-    <div id="content" class="content container oldheigth">
-      <a href="#content" class="pulltab">
-        <div id="pulltab" class="pulltab" onclick="fixHoverState"></div>
-      </a>
-      <div class="innercontainer fadeupsmall onLoad"
-          {% if page.name != "index.html" %}
-            data-aos="fade-up-small"
-          {% endif %}
-          >
-        {{ content }}
-      </div>
-    </div>
+
+<div id="content" class="content container oldheigth">
+  <a href="#content" class="pulltab">
+    <div id="pulltab" class="pulltab" onclick="fixHoverState"></div>
+  </a>
+  <div class="innercontainer fadeupsmall onLoad" {% if page.name != "index.html" %} data-aos="fade-up-small"
+    {% endif %}>
+    {{ content }}
+  </div>
+</div>

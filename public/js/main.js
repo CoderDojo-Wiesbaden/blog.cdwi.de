@@ -42,10 +42,42 @@ function toggleDarkTheme() {
 	}
 }
 
+function toggleNewsletterSignup() {
+	document.getElementById("newsletter").classList.toggle("active")
+	//document.getElementsByClassName("outercontainer")[0].classList.toggle("blur") //This causes lags
+}
+
+function chooseNewsletter(which) {
+	if (which == "all") {
+		document.getElementById("selectAllNewsletter").classList.add("active")
+		document.getElementById("selectImportantNewsletter").classList.remove("active")
+		//document.getElementById("newsletterForm").action = "https://google.com"
+		document.getElementById("newsletterTypeDescription").innerHTML = "Du wirst über alle neue Beiträge in diesem Blog benachrichtigt werden"
+	} else if (which == "important") {
+		document.getElementById("selectAllNewsletter").classList.remove("active")
+		document.getElementById("selectImportantNewsletter").classList.add("active")
+		//document.getElementById("newsletterForm").action = "https://google.com"
+		document.getElementById("newsletterTypeDescription").innerHTML = "Du wirst nur Mitteilungen erhalten, die die Organisation des CoderDojos betreffen"
+	}
+}
+
+function seenCookies() {
+	var d = new Date()
+	d.setTime(d.getTime() + (365 * 24 * 60 * 60 * 1000))
+	var expires = "expires=" + d.toUTCString()
+	document.cookie = "seencookies=true" + ";" + expires + ";path=/"
+	document.getElementById("cookiesNotification").classList.remove("aos-animate")
+}
+
 // Set Theme by URL
 var themeUnchecked = getParameterByName('d')
 //Theme parameter will remain unchecked. May be possible to do some fun things.
 document.body.classList.toggle(themeUnchecked)
+
+//Show cookie notification
+if (!decodeURIComponent(document.cookie).includes("seencookies=true") && !decodeURIComponent(document.cookie).includes("cookies=false")) {
+	document.getElementById("cookiesNotification").classList.remove("hidden")
+}
 
 
 $(document).ready(function () {
