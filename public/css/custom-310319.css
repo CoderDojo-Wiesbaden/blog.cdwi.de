@@ -294,11 +294,6 @@ ul.footer {
     display: none;
 }
 
-#notifications {
-    display: none;
-    /* Currently only on desktop */
-}
-
 .button {
     color: #515151;
     margin: unset;
@@ -438,6 +433,51 @@ input.button {
         border-bottom-right-radius: 0.5em;
         border-left: 0.5px solid #dfdfdf;
     }
+}
+
+@media (max-width: 96em) {
+
+    #notifications {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 32em;
+        z-index: 900;
+    }
+
+    #expandNotificationsMobile {
+        margin: 1em;
+        padding: 0.25em;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 0 10px #dedede;
+        border-radius: 2em;
+    }
+
+    #notificationsExpandableMobile {
+        max-height: 0;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 0 15px #dedede;
+        padding-bottom: 1em;
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+        transition: 300ms ease-out;
+    }
+
+    #notificationsExpandableMobile.active {
+        overflow-y: scroll;
+        max-height:85vh;
+    }
+
+    .notification {
+        border: 1px solid #fafafa;
+    }
+
+}
+
+@media (min-width: 96em) {
 
     /*
  * Notifications in the index
@@ -453,6 +493,10 @@ input.button {
         max-width: calc(100% - 64em);
         padding-top: 2.5em;
         padding-right: 2.5em;
+    }
+
+    #expandNotificationsMobile {
+        display: none;
     }
 }
 
@@ -592,7 +636,7 @@ input.button {
 .dark .content.container {
     background-color: #080808 !important;
     box-shadow: 0 0 25px #000000 !important;
-    
+
 }
 
 .dark .post-content *:not(a),
@@ -1027,6 +1071,12 @@ body[data-aos-duration="300"] [data-aos] {
 
     [data-aos="fade-mobile"].aos-animate {
         opacity: 1;
+    }
+
+    [data-aos].noanimMobile {
+        transform: unset;
+        opacity: 1;
+        transition: unset;
     }
 }
 

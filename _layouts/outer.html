@@ -52,6 +52,38 @@ layout: compress
         </div>
     </div>
 
+    {% if page.name == "index.html" %}
+    <div id="notifications">
+
+            <p id="expandNotificationsMobile" onclick="toggleNotificationsView()">Nachrichten zeigen</p>
+            <div id="notificationsExpandableMobile">
+          
+              <div id="noDojoNotification" class="notification noanimMobile" data-aos="fade-up" data-aos-delay="50"
+                onclick="toggleNewsletterSignup()">
+                <h3>Aktuell finden keine Dojos statt</h3>
+                <p>Melde dich für unseren Newsletter an<br /> und werde benachrichtigt, wenn es weitergeht</p>
+                <p class="button">Benachrichtigt werden</p>
+              </div>
+          
+              <div id="newsletterSignupNotification" class="notification noanimMobile" data-aos="fade-up" data-aos-delay="75"
+                onclick="toggleNewsletterSignup()">
+                <h3>Unser Newsletter</h3>
+                <p>Werde benachrichtigt, wenn es Neuigkeiten gibt</p>
+                <p class="button">Jetzt anmelden</p>
+              </div>
+          
+              <div id="cookiesNotification" class="notification nohover hidden" data-aos="fade-up" data-aos-delay="100">
+                <h3>Wir verwenden Cookies</h3>
+                <div class="actions" style="margin-top: 1em;">
+                  <p class="button" style="display: inline-block" onclick="seenCookies()">Okay</p>
+                  <a href="/rechtliches" class="button" style="display: inline-block; margin-left: 0.4em;">Erfahre mehr</a>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+    {% endif %}
+
     {% include sidebar.html %}
 
     <div class="outercontainer">
