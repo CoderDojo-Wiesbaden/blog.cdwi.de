@@ -311,7 +311,9 @@ ul.footer {
 }
 
 .dark .button {
-    box-shadow: 0 0 5px #020202;
+    box-shadow: unset;
+    border: 1px solid #515151;
+    color: #aaaaaa;
 }
 
 .button:hover {
@@ -323,6 +325,7 @@ ul.footer {
 
 .dark .button:hover {
     box-shadow: 0 0 2px #040404;
+    border: unset;
 }
 
 input[type=text],
@@ -340,6 +343,7 @@ input[type=email] {
 
 .dark input[type=text],
 .dark input[type=email] {
+    color: #dfdfdf;
     border: 1px solid #202020;
 }
 
@@ -466,7 +470,9 @@ input.button {
 .dark .notification {
     background-color: #080808;
     box-shadow: 0 0 10px #020202;
+    border: 1px solid #202020;
     color: #bbbbbb;
+    transition: 300ms;
 }
 
 .notification:hover {
@@ -586,6 +592,7 @@ input.button {
 .dark .content.container {
     background-color: #080808 !important;
     box-shadow: 0 0 25px #000000 !important;
+    
 }
 
 .dark .post-content *:not(a),
